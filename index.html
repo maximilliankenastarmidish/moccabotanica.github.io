@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mocca Botanica | Premium Indoor Microgreens Surabaya</title>
+    <meta name="description" content="Premium B2B microgreens supplier in Surabaya. 100% pesticide-free, freshly harvested indoor microgreens for high-end culinary and retail.">
+    
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configure Custom Theme Colors & Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mocca: {
+                            dark: '#263b2c',    /* Deep forest green from your logo */
+                            primary: '#3a5a43', /* Vibrant brand green */
+                            light: '#f7f5f0',   /* Warm, earthy cream background */
+                            accent: '#8b634b',  /* Earthy brown accent */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom selection color for a premium feel */
+        ::selection {
+            background-color: #3a5a43;
+            color: #ffffff;
+        }
+        /* Subtle image hover zoom effect for product cards */
+        .product-card-img {
+            transition: transform 0.5s ease;
+        }
+        .group:hover .product-card-img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-mocca-light text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <nav class="sticky top-0 z-50 bg-mocca-light/90 backdrop-blur-md border-b border-mocca-primary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <!-- Inline SVG Logo Representation -->
+                    <svg class="h-8 w-8 text-mocca-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22c4-4 4-10 0-14-4 4-4 10 0 14z"/>
+                        <path d="M12 8c4-4 4-10 0-14-4 4-4 10 0 14z" transform="translate(0, 4) scale(0.6)"/>
+                    </svg>
+                    <div class="flex flex-col">
+                        <span class="font-serif font-bold text-xl leading-none text-mocca-dark tracking-wide">MOCCA BOTANICA</span>
+                    </div>
+                </div>
+                <!-- Nav Links (Desktop) -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#guarantees" class="text-sm font-medium text-gray-600 hover:text-mocca-primary transition-colors">Quality</a>
+                    <a href="#products" class="text-sm font-medium text-gray-600 hover:text-mocca-primary transition-colors">Products</a>
+                    <a href="#contact" class="text-sm font-medium text-gray-600 hover:text-mocca-primary transition-colors">Contact</a>
+                    <!-- B2B Order CTA -->
+                    <a href="https://wa.me/62816521252" target="_blank" rel="noopener noreferrer" class="bg-mocca-dark hover:bg-mocca-primary text-white px-5 py-2.5 rounded-sm text-sm font-semibold transition-all shadow-sm">
+                        Request Samples
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <a href="https://wa.me/62816521252" target="_blank" class="text-mocca-dark font-medium text-sm flex items-center gap-1">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Order
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-mocca-light overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="uppercase tracking-widest text-mocca-accent font-semibold text-xs mb-4 block">Premium Culinary Ingredients</span>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-mocca-dark mb-6 leading-tight">
+                    Fresh Indoor <br>
+                    <span class="italic font-light text-mocca-primary">Microgreens</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                    Elevating Surabaya's fine dining and retail spaces with meticulously cultivated, pesticide-free microgreens. Delivered fresh, daily.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/62816521252" target="_blank" rel="noopener noreferrer" class="bg-mocca-dark hover:bg-mocca-primary text-white px-8 py-4 rounded-sm text-base font-medium transition-all shadow-lg flex items-center justify-center gap-2 group">
+                        <svg class="w-5 h-5 text-green-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Order via WhatsApp
+                    </a>
+                    <a href="#products" class="bg-transparent border border-mocca-dark text-mocca-dark hover:bg-mocca-dark hover:text-white px-8 py-4 rounded-sm text-base font-medium transition-colors">
+                        View Products
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative Background Element -->
+        <div class="absolute inset-0 z-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#263b2c 1px, transparent 1px); background-size: 32px 32px;"></div>
+    </section>
+
+    <section id="guarantees" class="py-16 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-mocca-light flex items-center justify-center mb-4 text-mocca-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="font-serif font-bold text-gray-900 mb-1">100% Bebas Pestisida</h3>
+                    <p class="text-xs text-gray-500">Grown safely indoors</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-mocca-light flex items-center justify-center mb-4 text-mocca-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="font-serif font-bold text-gray-900 mb-1">Lokal Surabaya</h3>
+                    <p class="text-xs text-gray-500">Zero food miles, max freshness</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-mocca-light flex items-center justify-center mb-4 text-mocca-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="font-serif font-bold text-gray-900 mb-1">Segar Tanpa Pengawet</h3>
+                    <p class="text-xs text-gray-500">Harvested strictly to order</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-mocca-light flex items-center justify-center mb-4 text-mocca-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="font-serif font-bold text-gray-900 mb-1">PSAT-PDUK Ready</h3>
+                    <p class="text-xs text-gray-500">Registered & compliant</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-mocca-light flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-mocca-dark mb-4">Our Standard Varieties</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Cultivated sequentially for uncompromised quality. All products are delivered in commercial-grade 50g PET clamshells to preserve the cold chain.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <!-- Product 1: Sunflower -->
+                <div class="bg-white rounded-sm shadow-sm hover:shadow-xl transition-shadow overflow-hidden group border border-gray-100 flex flex-col">
+                    <div class="h-64 bg-gray-200 relative overflow-hidden">
+                        <!-- High quality placeholder representing fresh greens -->
+                        <img src="https://placehold.co/600x400/2C4C3B/F4F1EA?text=Sunflower\nMicrogreens" alt="Sunflower Microgreens" class="w-full h-full object-cover product-card-img">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-xs font-semibold tracking-wide text-mocca-dark rounded-sm backdrop-blur-sm shadow-sm">50 Gram</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-serif font-bold text-gray-900 mb-2">Sunflower Microgreens</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">A thick, crunchy texture with a distinct nutty flavor. The quintessential premium garnish for salads, sandwiches, and culinary plating.</p>
+                        <a href="https://wa.me/62816521252?text=Hello%20Mocca%20Botanica,%20I%20would%20like%20to%20request%20a%20sample%20of%20Sunflower%20Microgreens." target="_blank" class="text-mocca-primary font-semibold text-sm hover:text-mocca-dark flex items-center transition-colors">
+                            Request Sample &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Radish -->
+                <div class="bg-white rounded-sm shadow-sm hover:shadow-xl transition-shadow overflow-hidden group border border-gray-100 flex flex-col">
+                    <div class="h-64 bg-gray-200 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/5B2C3B/F4F1EA?text=Radish\nMicrogreens" alt="Radish Microgreens" class="w-full h-full object-cover product-card-img">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-xs font-semibold tracking-wide text-mocca-dark rounded-sm backdrop-blur-sm shadow-sm">50 Gram</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-serif font-bold text-gray-900 mb-2">Radish Microgreens</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Crisp and slightly spicy with a peppery kick. Offers striking visual contrast and bold flavor for sushi, modern fusion, and gourmet dishes.</p>
+                        <a href="https://wa.me/62816521252?text=Hello%20Mocca%20Botanica,%20I%20would%20like%20to%20request%20a%20sample%20of%20Radish%20Microgreens." target="_blank" class="text-mocca-primary font-semibold text-sm hover:text-mocca-dark flex items-center transition-colors">
+                            Request Sample &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Pea Shoots -->
+                <div class="bg-white rounded-sm shadow-sm hover:shadow-xl transition-shadow overflow-hidden group border border-gray-100 flex flex-col">
+                    <div class="h-64 bg-gray-200 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/3A5A43/F4F1EA?text=Pea+Shoots\n(Tomiao)" alt="Pea Shoots" class="w-full h-full object-cover product-card-img">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 text-xs font-semibold tracking-wide text-mocca-dark rounded-sm backdrop-blur-sm shadow-sm">50 Gram</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-serif font-bold text-gray-900 mb-2">Pea Shoots (Tomiao)</h3>
+                        <p class="text-sm text-gray-600 mb-4 flex-grow">Sweet, robust, and crisp. These elegant tendrils are a staple in upscale Asian cuisine and provide a high-end structural element to any dish.</p>
+                        <a href="https://wa.me/62816521252?text=Hello%20Mocca%20Botanica,%20I%20would%20like%20to%20request%20a%20sample%20of%20Pea%20Shoots." target="_blank" class="text-mocca-primary font-semibold text-sm hover:text-mocca-dark flex items-center transition-colors">
+                            Request Sample &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-mocca-dark text-white pt-16 pb-8 border-t-4 border-mocca-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <h2 class="font-serif font-bold text-3xl mb-4 text-mocca-light">Mocca Botanica</h2>
+                    <p class="text-gray-300 max-w-sm font-light mb-6">
+                        Providing Surabaya's leading culinary professionals with uncompromisingly fresh, safe, and beautiful microgreens.
+                    </p>
+                    <div class="flex flex-col gap-2">
+                        <a href="mailto:admin@moccabotanica.com" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            admin@moccabotanica.com
+                        </a>
+                        <p class="text-gray-300 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            Surabaya, Indonesia
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="md:text-right flex flex-col md:items-end justify-center">
+                    <p class="text-sm text-gray-400 mb-2 uppercase tracking-widest">Business Inquiries</p>
+                    <a href="https://wa.me/62816521252" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-mocca-primary hover:bg-white hover:text-mocca-dark text-white px-6 py-3 rounded-sm font-semibold transition-all">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Contact Sales via WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-mocca-primary/30 flex flex-col md:flex-row justify-between items-center text-xs text-mocca-primary font-light">
+                <p>&copy; 2026 Mocca Botanica. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Permit PSAT-PDUK: Dalam Proses (UMK)</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
